@@ -1,0 +1,56 @@
+.navbar-dark {
+  background-color: #687818; }
+
+.col-xs-3, .col-xs-4, .col-xs-5, .col-xs-2 {
+  border: 1px solid black; }
+
+.col-3, .col-4, .col-5, .col-2 {
+  border: 1px solid black; }
+
+.container.t1 {
+  margin-top: 100px; }
+
+.row-content {
+  margin: 0px auto;
+  padding: 0px 0px; }
+
+.nav2 {
+  background-color: #FFD58E;
+  margin: #FFD58E 1px solid;
+  margin-top: 73px; }
+
+/*
+<div class="container">
+        <div class="row row-content">
+          
+          <div class="col-1">  
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+              <span class="navbar-toggler-icon"></span>
+             </button>
+          </div>
+
+          <div class="col-2">
+           <a class="navbar-brand mr-auto" href="#"><img src="img/logo.png"></a>
+          </div>
+          
+          <div class="col-5">
+
+           <form class="form-inline"> 
+           <input class="form-control" type="text" placeholder="Search"> 
+           <button class="btn" type="submit">
+             <span class="fa fa-search fa-sm"></span>
+            </button> 
+           </form>
+          
+          </div>
+
+          <div class="col-4">
+            <ul class="nav navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-shopping-cart fa-lg"></span> Cart</a></li>
+              <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-sign-in"></span> Login</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    */
