@@ -13,61 +13,65 @@ $background-alt: #687818;
 .col-3,.col-4,.col-5,.col-2
 {
     border: 1px solid black;
+    height: 20px;
 }
 
-.container.t1
+.t1
 {
-    margin-top: 100px;
+    margin-top: 150px;
+    padding: 0px;
+    width: 100%;
 }
+
 @mixin zero-margin($pad-up-dn, $pad-left-right) {
 	margin:0px auto;
 	padding: $pad-up-dn $pad-left-right;
 }
 
 .row-content{
-    @include zero-margin(0px,0px);
+    @include zero-margin(50px,0px);
+    border: 2px solid black;
+
 }
 
+.carousel-item
+{
+  height:100%;
+  img
+  {
+    min-height:150px;
+  }
+}
+#mycarousel
+{
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
 .nav2
 {
     background-color: $background-light;
     margin:$background-light 1px solid;
     margin-top: 68px;
 }
-
-
-/*
-<div class="container">
-        <div class="row row-content">
-          
-          <div class="col-1">  
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
-              <span class="navbar-toggler-icon"></span>
-             </button>
-          </div>
-
-          <div class="col-2">
-           <a class="navbar-brand mr-auto" href="#"><img src="img/logo.png"></a>
-          </div>
-          
-          <div class="col-5">
-
-           <form class="form-inline"> 
-           <input class="form-control" type="text" placeholder="Search"> 
-           <button class="btn" type="submit">
-             <span class="fa fa-search fa-sm"></span>
-            </button> 
-           </form>
-          
-          </div>
-
-          <div class="col-4">
-            <ul class="nav navbar-nav">
-              <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-shopping-cart fa-lg"></span> Cart</a></li>
-              <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-sign-in"></span> Login</a></li>
-            </ul>
-          </div>
-
-        </div>
-      </div>
-    */
+@media (max-width: 933px)
+{
+  .carousel-item
+  {
+    height: 150px;
+    img{
+     height: 150px;
+     position: absolute;
+     left: 50%;
+     transform: translateX(-50%);
+     max-width: 265%;     
+    }
+  }
+}
+@media (max-width: 575px)
+{
+  .t1
+  {
+    margin-top: 100px;
+  }
+}
