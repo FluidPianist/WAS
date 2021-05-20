@@ -1,10 +1,28 @@
 .navbar-dark {
   background-color: #687818; }
 
+.nav2 {
+  background-color: #FFD58E;
+  margin: #FFD58E 1px solid;
+  margin-top: 68px; }
+
 .t1 {
   margin-top: 150px;
   padding: 0px;
   width: 100%; }
+
+.carousel-item {
+  height: 100%; }
+  .carousel-item img {
+    min-height: 150px; }
+
+#mycarousel {
+  width: 100%;
+  margin: 0px;
+  padding: 0px; }
+
+.t2 {
+  margin-bottom: 20%; }
 
 .row-content {
   margin: 0px auto;
@@ -19,20 +37,34 @@
   width: 100%;
   height: fit-content; }
 
-.carousel-item {
-  height: 100%; }
-  .carousel-item img {
-    min-height: 150px; }
+a {
+  color: inherit; }
 
-#mycarousel {
-  width: 100%;
-  margin: 0px;
-  padding: 0px; }
-
-.nav2 {
-  background-color: #FFD58E;
-  margin: #FFD58E 1px solid;
-  margin-top: 68px; }
+.item {
+  padding: 0px;
+  height: fit-content;
+  max-width: 250px;
+  margin: 3px;
+  background-color: #FFD58E; }
+  .item .abt {
+    background-color: white;
+    color: #3c1605;
+    padding: 0px; }
+    .item .abt h6 {
+      font-weight: bold;
+      font-size: 110%;
+      margin: 0px; }
+    .item .abt .desc {
+      font-size: 80%;
+      margin: 0px; }
+    .item .abt p {
+      margin-top: 2%;
+      border: 1px solid #FFD58E;
+      font-weight: bold;
+      font-size: 100%;
+      margin: 0px; }
+  .item .pic {
+    margin: 3%; }
 
 footer {
   background-color: #687818;
@@ -40,9 +72,6 @@ footer {
   margin: 0px auto;
   padding: 20px 0px;
   text-decoration: none; }
-
-a {
-  color: inherit; }
 
 @media (max-width: 933px) {
   .carousel-item {
@@ -57,3 +86,13 @@ a {
 @media (max-width: 575px) {
   .t1 {
     margin-top: 100px; } }
+
+@media (max-width: 425px) {
+  .abt {
+    font-size: 60%; } }
+
+/*<div class="sml text-center border">
+                    <span class="border">S</span>
+                    <span>M</span>
+                    <span>L</span>
+              </div>*/
