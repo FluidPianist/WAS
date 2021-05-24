@@ -7,6 +7,42 @@ $background-alt: #687818;
 	padding: $pad-up-dn $pad-left-right;
 }
 
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: $background-alt;
+  border-color: $background-alt;
+}
+.custom-checkbox .custom-control-input:focus ~ .custom-control-label::before {
+  box-shadow:0 0 3px $background-alt;
+  border-color: $background-alt;
+}
+.custom-checkbox .custom-control-input:active ~ .custom-control-label::before {
+  box-shadow:0 0 20px $background-alt;
+  border-color: $background-alt;
+  background:$background-alt;
+}
+.custom-control-label::before {
+  border-radius: 0.25rem;
+  border-color: $background-alt;
+}
+
+
+
+.b1{ //button type 1
+    background-color: $background-light;
+    
+}
+
+.b2
+{
+  background-color: $background-alt;
+  color: $background-light;
+  font-weight: bold;
+}
+
+
+
+
+
 .navbar-dark{
     background-color: $background-alt;
 }
@@ -16,6 +52,17 @@ $background-alt: #687818;
     background-color: $background-light;
     margin:$background-light 1px solid;
     margin-top: 68px;
+}
+
+.modal-header
+{
+  background-color: $background-alt;
+  color: $background-light;
+  font-weight: bold;
+  .close
+  {
+    color: $background-light;
+  }
 }
 
 .t1 //carousel container
@@ -55,12 +102,13 @@ $background-alt: #687818;
   margin-top: 100px;
   font-weight: bold;
   color: $background-dark;
-  border-bottom: solid 2px $background-dark;
+  border-bottom: ridge 2px;
   width: 100%;
   height: fit-content;
+  padding-bottom: 1%;
+  margin-bottom: 1%;
 }
-
-a{
+  a{
   color: inherit;
 }
 
