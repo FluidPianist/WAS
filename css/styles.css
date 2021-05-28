@@ -23,6 +23,19 @@
   color: #FFD58E;
   font-weight: bold; }
 
+.b2:hover, .b2:active {
+  background-color: #FFD58E;
+  color: #687818; }
+
+.b3 {
+  background-color: #3c1605;
+  color: #FFD58E;
+  font-weight: bold; }
+
+.b3:hover, .b3:active {
+  background-color: #FFD58E;
+  color: #3c1605; }
+
 .navbar-dark {
   background-color: #687818; }
 
@@ -100,6 +113,46 @@ a {
   .item .pic {
     margin: 3%; }
 
+.media {
+  margin: 2%; }
+  .media .media-body {
+    padding: 0%; }
+    .media .media-body h5 {
+      color: #3c1605;
+      font-weight: bold;
+      font-size: 90%;
+      margin: 0%; }
+    .media .media-body p {
+      font-size: 70%;
+      font-weight: bold;
+      margin: 1%; }
+    .media .media-body form {
+      margin-top: 0%;
+      font-size: 60%;
+      font-weight: bold;
+      color: #3c1605;
+      padding: 0%; }
+      .media .media-body form .form-group {
+        margin: 2%;
+        padding: 0%; }
+        .media .media-body form .form-group label {
+          padding: 1%;
+          text-align: center; }
+        .media .media-body form .form-group .btn-group-toggle .btn:not(:disabled):not(.disabled).active, .media .media-body form .form-group .btn-group-toggle .btn:not(:disabled):not(.disabled):active, .media .media-body form .form-group .show > .btn.dropdown-toggle {
+          background-color: #FFD58E;
+          color: #687818;
+          box-shadow: 0 0 5px grey; }
+      .media .media-body form .b2 {
+        margin: 3px;
+        font-size: x-small;
+        border-radius: 100px; }
+  .media .select {
+    font-size: 60%;
+    margin-top: 2%; }
+    .media .select button {
+      font-size: 90%;
+      margin: 1%; }
+
 footer {
   background-color: #687818;
   color: #FFD58E;
@@ -124,6 +177,20 @@ footer {
 @media (max-width: 425px) {
   .abt {
     font-size: 60%; } }
+
+@media (min-width: 425px) {
+  .media {
+    font-size: 120%; } }
+
+@media (min-width: 768px) {
+  .media {
+    font-size: 140%; } }
+
+@media (min-width: 992px) {
+  .media {
+    font-size: 150%; }
+    .media .size-desc {
+      font-size: 120%; } }
 
 /*<div class="sml text-center border">
                     <span class="border">S</span>

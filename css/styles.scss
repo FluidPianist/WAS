@@ -28,8 +28,7 @@ $background-alt: #687818;
 
 
 .b1{ //button type 1
-    background-color: $background-light;
-    
+    background-color: $background-light;   
 }
 
 .b2
@@ -37,6 +36,21 @@ $background-alt: #687818;
   background-color: $background-alt;
   color: $background-light;
   font-weight: bold;
+}
+.b2:hover,.b2:active
+{
+  background-color: $background-light;
+  color: $background-alt;
+}
+.b3
+{
+  background-color: $background-dark;
+  color: $background-light;
+  font-weight: bold;
+}
+.b3:hover,.b3:active{
+  background-color: $background-light;
+  color: $background-dark;
 }
 
 
@@ -112,6 +126,8 @@ $background-alt: #687818;
   color: inherit;
 }
 
+
+
 .item{
   padding: 0px;
   height: fit-content;
@@ -150,6 +166,77 @@ $background-alt: #687818;
   }
  
 }
+div
+{
+ // border: 1px solid black;
+}
+
+.media
+{
+  margin: 2%;
+  //background-color: $background-light;
+  //border: 1px solid black;
+  .media-body{
+    //border: 1px solid black;
+    padding: 0%;//padding between nested coloumns
+    //background-color: $background-light;
+      h5{
+      //border: 1px solid black;
+      color:$background-dark;
+      font-weight: bold;
+      font-size: 90%;
+      margin:0%;
+    }
+    p{
+      font-size: 70%;
+      //border: 1px solid black;
+      font-weight: bold;
+      margin: 1%;
+    }
+    form{
+      margin-top: 0%;    
+      font-size:60%;
+      font-weight: bold;
+      color:$background-dark;
+      padding: 0%;
+      //border: 1px solid black;
+      .form-group{
+      //border: 1px solid black;
+      margin:2%;
+      padding: 0%;
+      label{
+        //border: 1px solid black;
+        padding:1%; 
+        text-align: center;
+      }
+      .btn-group-toggle .btn:not(:disabled):not(.disabled).active, .btn-group-toggle .btn:not(:disabled):not(.disabled):active, .show>.btn.dropdown-toggle {
+        background-color: $background-light;
+        color: $background-alt;
+        box-shadow: 0 0 5px grey;
+      } 
+      }
+      .b2
+      {
+        margin: 3px;
+        font-size: x-small;
+        border-radius: 100px;
+      }
+    }
+  
+  }
+  .select
+    {
+      //border: 1px solid black;
+      font-size: 60%; 
+      margin-top: 2%;
+      button{
+        font-size: 90%;
+        margin: 1%;
+      }
+      
+  } 
+  
+}
 
 footer{
   background-color: $background-alt;
@@ -173,21 +260,46 @@ footer{
     }
   }
 }
-@media (max-width: 575px)
+
+@media (max-width: 575px) //never work with max widths i.e start with mobike design always
 {
   .t1
   {
     margin-top: 100px;
   }
 }
-
-
 @media (max-width:425px)
 {
   .abt{
     font-size: 60%;    
   }
 }
+
+@media (min-width:425px)
+{
+  .media{ 
+    font-size: 120%;
+  } 
+}
+@media (min-width:768px)
+{
+  .media{ 
+    font-size: 140%;
+  }
+   
+}
+@media (min-width:992px)
+{
+  .media{ 
+    font-size: 150%;
+    .size-desc{
+     //border: 1px solid black;
+     font-size: 120%;
+    }
+  }
+   
+}
+
 
 
 /*<div class="sml text-center border">
