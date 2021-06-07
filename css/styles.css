@@ -43,6 +43,13 @@
   background-color: #FFD58E;
   margin: #FFD58E 1px solid;
   margin-top: 68px; }
+  .nav2 .dropdown-menu {
+    font-size: 90%; }
+    .nav2 .dropdown-menu .dropdown-header {
+      color: #687818;
+      padding-left: 8px; }
+    .nav2 .dropdown-menu .dropdown-item {
+      color: #3c1605; }
 
 .modal-header {
   background-color: #687818;
@@ -176,7 +183,10 @@ footer {
 
 @media (max-width: 425px) {
   .abt {
-    font-size: 60%; } }
+    font-size: 60%; }
+  .nav2 {
+    border: 1px solid red;
+    font-size: 90%; } }
 
 @media (min-width: 425px) {
   .media {

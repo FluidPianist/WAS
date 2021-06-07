@@ -65,7 +65,19 @@ $background-alt: #687818;
 {
     background-color: $background-light;
     margin:$background-light 1px solid;
-    margin-top: 68px;
+    margin-top: 68px;  
+    .dropdown-menu
+    {
+      font-size: 90%; 
+      .dropdown-header{
+        color: $background-alt;
+        padding-left: 8px;  
+      }
+      .dropdown-item
+      {
+        color: $background-dark;  
+      }  
+    }
 }
 
 .modal-header
@@ -272,6 +284,11 @@ footer{
 {
   .abt{
     font-size: 60%;    
+  }
+  .nav2
+  {
+    border: 1px solid red;
+    font-size: 90%;
   }
 }
 
