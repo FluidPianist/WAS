@@ -19,41 +19,57 @@
    
       
     <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
-       <div class>
-         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
-           <span class="navbar-toggler-icon"></span>
-         </button>
-       </div>
+      <div class>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+         
+      <div class=" ">
+        <ul class="nav navbar-nav" id="log_area">
           
-       <div class=" ">
-         <ul class="nav navbar-nav" id="log_area">
-           
-         </ul>
-       </div>   
-       
-       <a class="navbar-brand" href="#"></a>   
-       
-       <ul class="nav navbar-nav">
-         <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-search fa-lg"></span><span id="find"> Find</span>&nbsp;&nbsp;</a></li>
-       </ul>
-
-       <ul class="nav navbar-nav">
-         <li class="nav-item"><a class="nav-link" href="#"> <span class="fa fa-shopping-cart fa-lg"></span><span id="cart"> Cart</span></a></li>
-       </ul>
-    </nav>
-
-   <nav class="navbar navbar-light navbar-expand-sm fixed-top nav2">
-     <div class="collapse navbar-collapse" id="Navbar">
-        <ul class="navbar-nav mx-auto" id="Navarea">
-            <li class="nav-item"><a class="nav-link" href="index.html"><span class="fa fa-home fa-lg"></span> Home&nbsp;</a></li>
-            <li class="nav-item"><a class="nav-link active" href="items.html"><span class="fa fa-list fa-lg"></span> Items&nbsp;</a></li>
-            <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-wikipedia-w fa-lg"></span>holesale&nbsp;</a></li>
-            <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-certificate fa-lg"></span> Sale&nbsp;</a></li>
-            <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About&nbsp;</a></li>
-            <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact &nbsp;</a></li> 
         </ul>
-     </div>
+      </div>   
+      
+      <a class="navbar-brand" href="#"></a>   
+      
+      <ul class="nav navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-search fa-lg"></span><span id="find"> Find</span>&nbsp;&nbsp;</a></li>
+      </ul>
+
+      <ul class="nav navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#"> <span class="fa fa-shopping-cart fa-lg"></span><span id="cart"> Cart</span></a></li>
+      </ul>
    </nav>
+
+  <nav class="navbar navbar-light navbar-expand-sm fixed-top nav2">
+    <div class="collapse navbar-collapse" id="Navbar">
+       <ul class="navbar-nav mx-auto" id="Navarea">
+           <li class="nav-item"><a class="nav-link" href="index.html"><span class="fa fa-home fa-lg"></span> Home&nbsp;</a></li>
+           <li class="nav-item dropdown">
+             <a class="nav-link active dropdown-toggle" href="#" id="itemlist" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               <span class="fa fa-list fa-lg"></span> Items
+             </a>
+             <div class="dropdown-menu" aria-labelledby="itemlist">
+               <h5 class="dropdown-header">Men's</h5>
+               <a class="dropdown-item" href="items.html">Round Neck Full Sleeves</a>
+               <a class="dropdown-item" href="items.html#RNHS">Round Neck Half Sleeves</a>
+               <a class="dropdown-item" href="items.html#VNFS">V Neck Full Sleeves</a>
+               <a class="dropdown-item" href="items.html#RNHS">V-Neck Half Sleeves</a>
+               <a class="dropdown-item" href="items.html#VNHS">Shorts</a>
+               <h5 class="dropdown-header">Women's</h5>
+               <a class="dropdown-item" href="items.html#WMUP">Tops</a>
+             </div>
+           </li>
+           
+            
+           <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-wikipedia-w fa-lg"></span>holesale&nbsp;</a></li>
+           <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-certificate fa-lg"></span> Sale&nbsp;</a></li>
+           <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About&nbsp;</a></li>
+           <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact &nbsp;</a></li> 
+       </ul>
+    </div>
+  </nav>
 
    <div id="loginModal" class="modal fade" role="dialog">
     <div class="modal-dialog modal-lg" role="content">
@@ -94,7 +110,14 @@
    </div>
 
    <div class="container t1 mb-5">
-       <div class="row-header mt-1">
+      
+    <div class="row mx-2">
+      <ol class="col-12 breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active">About Us</a></li>
+      </ol>
+  </div>
+      <div class="row-header mt-1">
            <h3 class="ml-1">FOR HIM</h3>
        </div>
        
@@ -252,7 +275,7 @@
                     </div> 
                 </div> 
           </div>
-          <div class="row row-content mt-5 border">
+          <div class="row row-content mt-5 border" id="RNHS">
             <h4 class="ml-3">Round Neck Half Sleeves</h5>
               <div class="col-12 mt-3">
                 <div class="media row border">
@@ -305,7 +328,7 @@
             </div> 
       </div>
       
-      <div class="row row-content mt-5 border">
+      <div class="row row-content mt-5 border" id="VNHS">
         <h4 class="ml-3">V-Neck Half Sleeves</h5>
           <div class="col-12 mt-3">
             <div class="media row border">
@@ -357,7 +380,7 @@
             </div> 
         </div> 
      </div>
-     <div class="row row-content mt-5 border">
+     <div class="row row-content mt-5 border" id="SHOR">
       <h4 class="ml-3">Shorts</h5>
         <div class="col-12 mt-3">
           <div class="media row border">
@@ -414,7 +437,7 @@
             <h2>FOR HER</h2>
   </div>
   <div class="row row-content">
-  <div class="row row-content mt-5 border">
+  <div class="row row-content mt-5 border" id="WMUP">
     <h4 class="ml-3">Printed Tops</h4>
       <div class="col-12 mt-3">
         <div class="media row border">

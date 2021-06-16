@@ -15,6 +15,11 @@
   border-radius: 0.25rem;
   border-color: #687818; }
 
+#accordion .b2 {
+  font-size: 18px; }
+  #accordion .b2 small {
+    white-space: nowrap; }
+
 .b1 {
   background-color: #FFD58E; }
 
@@ -160,12 +165,24 @@ a {
       font-size: 90%;
       margin: 1%; }
 
-footer {
+.footer {
   background-color: #687818;
   color: #FFD58E;
   margin: 0px auto;
   padding: 20px 0px;
-  text-decoration: none; }
+  text-decoration: none;
+  font-size: 90%; }
+
+.card-header {
+  background-color: #687818;
+  color: #FFD58E; }
+
+.tb th {
+  color: #3c1605; }
+
+.tb thead {
+  background-color: #FFD58E;
+  color: #3c1605; }
 
 @media (max-width: 933px) {
   .carousel-item {
@@ -185,7 +202,6 @@ footer {
   .abt {
     font-size: 60%; }
   .nav2 {
-    border: 1px solid red;
     font-size: 90%; } }
 
 @media (min-width: 425px) {
